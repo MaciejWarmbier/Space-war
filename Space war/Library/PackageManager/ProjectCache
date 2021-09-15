@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637672172398249873
-    m_Hash: 2838071135
+      ticks: 637673025946528887
+    m_Hash: 1379937990
   m_LockFileStatus:
     m_FilePath: E:/UNITY 3D CODE/Space-war/Space war/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637672172398346284
-    m_Hash: 4075986125
+      ticks: 637673025946528887
+    m_Hash: 251230432
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -2814,4 +2814,4 @@ m_PackageAssets:
   m_LocalPackages:
     m_LocalFileStatus: []
 m_ProjectPath: E:/UNITY 3D CODE/Space-war/Space war/Packages
-m_EditorVersion: 2020.3.15f2 (6cf78cb77498)
+m_EditorVersion: 2020.3.17f1 (a4537701e4ab)
