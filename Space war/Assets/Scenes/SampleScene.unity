@@ -123,9 +123,14 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &160414212 stripped
+--- !u!1 &40186937 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 8320600120449276320, guid: ad57756d84b006f4fb58343854b98bc2, type: 3}
+  m_CorrespondingSourceObject: {fileID: 6867561334395803151, guid: ad57756d84b006f4fb58343854b98bc2, type: 3}
+  m_PrefabInstance: {fileID: 2244174256057391681}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &305886383 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7093440523358583703, guid: ad57756d84b006f4fb58343854b98bc2, type: 3}
   m_PrefabInstance: {fileID: 2244174256057391681}
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &538580154 stripped
@@ -226,11 +231,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &723601156 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1893689521728817456, guid: ad57756d84b006f4fb58343854b98bc2, type: 3}
-  m_PrefabInstance: {fileID: 2244174256057391681}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1154326757
 GameObject:
   m_ObjectHideFlags: 0
@@ -412,53 +412,114 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Rig
       objectReference: {fileID: 0}
-    - target: {fileID: 2824032102868407648, guid: ad57756d84b006f4fb58343854b98bc2, type: 3}
-      propertyPath: shooting.m_Id
-      value: f6cc5259-f598-4ee3-98d5-10cfc6c12b89
-      objectReference: {fileID: 0}
-    - target: {fileID: 2824032102868407648, guid: ad57756d84b006f4fb58343854b98bc2, type: 3}
-      propertyPath: shooting.m_Name
-      value: Shooting
-      objectReference: {fileID: 0}
-    - target: {fileID: 2824032102868407648, guid: ad57756d84b006f4fb58343854b98bc2, type: 3}
-      propertyPath: lasers.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2824032102868407648, guid: ad57756d84b006f4fb58343854b98bc2, type: 3}
-      propertyPath: lasers.Array.data[0]
-      value: 
-      objectReference: {fileID: 723601156}
-    - target: {fileID: 2824032102868407648, guid: ad57756d84b006f4fb58343854b98bc2, type: 3}
-      propertyPath: lasers.Array.data[1]
-      value: 
-      objectReference: {fileID: 160414212}
-    - target: {fileID: 2824032102868407648, guid: ad57756d84b006f4fb58343854b98bc2, type: 3}
-      propertyPath: shooting.m_SingletonActionBindings.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2824032102868407648, guid: ad57756d84b006f4fb58343854b98bc2, type: 3}
-      propertyPath: shooting.m_SingletonActionBindings.Array.data[0].m_Id
-      value: b999c27f-aa91-44a7-98b1-ff791b6a75d8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2824032102868407648, guid: ad57756d84b006f4fb58343854b98bc2, type: 3}
-      propertyPath: shooting.m_SingletonActionBindings.Array.data[1].m_Id
-      value: 72e7fba6-ac38-457b-af4e-4512f7c6935a
-      objectReference: {fileID: 0}
-    - target: {fileID: 2824032102868407648, guid: ad57756d84b006f4fb58343854b98bc2, type: 3}
-      propertyPath: shooting.m_SingletonActionBindings.Array.data[0].m_Path
-      value: <Keyboard>/space
-      objectReference: {fileID: 0}
-    - target: {fileID: 2824032102868407648, guid: ad57756d84b006f4fb58343854b98bc2, type: 3}
-      propertyPath: shooting.m_SingletonActionBindings.Array.data[1].m_Path
-      value: <XInputController>/buttonSouth
-      objectReference: {fileID: 0}
-    - target: {fileID: 2824032102868407648, guid: ad57756d84b006f4fb58343854b98bc2, type: 3}
-      propertyPath: shooting.m_SingletonActionBindings.Array.data[0].m_Action
-      value: Shooting
-      objectReference: {fileID: 0}
-    - target: {fileID: 2824032102868407648, guid: ad57756d84b006f4fb58343854b98bc2, type: 3}
-      propertyPath: shooting.m_SingletonActionBindings.Array.data[1].m_Action
-      value: Shooting
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad57756d84b006f4fb58343854b98bc2, type: 3}
+--- !u!1 &2244174256057391682 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9124468011058699690, guid: ad57756d84b006f4fb58343854b98bc2, type: 3}
+  m_PrefabInstance: {fileID: 2244174256057391681}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2244174256057391683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2244174256057391682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0f7db9320956de4a80fee3acf9279d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement:
+    m_Name: Movement
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: d4ab0f20-a1e9-420c-beea-c7e3f61823b3
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 2D Vector
+      m_Id: 2c0b1045-c61b-4a4b-a525-d9846c9d2b32
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 4
+    - m_Name: up
+      m_Id: c83def59-e715-497e-8398-de9a217afd14
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 1e8740b9-0d67-49e4-8d12-0b8ebbc44c27
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: left
+      m_Id: 432a4a34-d6ff-4573-b32a-566d2aebe188
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 0d920749-2384-4887-8c48-7bb0c76059a4
+      m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: 
+      m_Id: 9f32d267-01ab-4fd3-b6fa-278482171baa
+      m_Path: <XInputController>/leftStick
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 0
+  shooting:
+    m_Name: Shooting
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 47012461-1857-4997-befb-c8b15b359b41
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 7aa7b902-10ed-457a-abd8-cf87ce21fc2f
+      m_Path: <Keyboard>/space
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Shooting
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 30b5e4b0-f86e-4be5-a1a1-8807dec46fd6
+      m_Path: <XInputController>/buttonSouth
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Shooting
+      m_Flags: 0
+  controlSpeed: 30
+  xRange: 9
+  yRange: 8
+  lasers:
+  - {fileID: 305886383}
+  - {fileID: 40186937}
+  positionPitchFactor: -2
+  controlPitchFactor: -20
+  positionYawFactor: -2
+  controlRollFactor: -20
+  xThrow: 0
+  yThrow: 0
