@@ -6,22 +6,35 @@ using UnityEngine.InputSystem;
 
 public class PlayerControls : MonoBehaviour
 {
-    [Header("General Setup Settings")]
+    [Header("Input Variables")]
+    [Tooltip("Controls for movement of the player")]
     [SerializeField] InputAction movement;
+    [Tooltip("Controls for shooting of the player")]
     [SerializeField] InputAction shooting;
-    [Tooltip("How fast ship moves up and down based upon player input")]
-    [SerializeField] float controlSpeed = 30f;
-    [SerializeField] float xRange = 9f;
-    [SerializeField] float yRange = 8f;
+    [Tooltip("Array of player's laser particles to turn off/on")]
     [SerializeField] GameObject[] lasers;
 
+    [Header("Angle Movement Settings")]
+    [Tooltip("How far player can move on the x axis before they are blocked")]
+    [SerializeField] float xRange = 9f;
+    [Tooltip("How far player can move on the y axis before they are blocked")]
+    [SerializeField] float yRange = 8f;
+    [Tooltip("How fast player rotates on Pitch (x) angle based on position")]
     [SerializeField] float positionPitchFactor = -2f;
+    [Tooltip("How fast player rotates on Pitch (x) angle based on movement")]
     [SerializeField] float controlPitchFactor = -20f;
+    [Tooltip("How fast player rotates on Yaw (y) angle based on position")]
     [SerializeField] float positionYawFactor = -2f;
+    [Tooltip("How fast player rotates on Roll (z) angle based on movement")]
     [SerializeField] float controlRollFactor = -20f;
-    [SerializeField] float xThrow;
-    [SerializeField] float yThrow;
 
+    [Header("Movement Settings")]
+    [Tooltip("Players X position")]
+    [SerializeField] float xThrow;
+    [Tooltip("Players Y position")]
+    [SerializeField] float yThrow;
+    [Tooltip("How fast ship moves up and down based upon player input.")]
+    [SerializeField] float controlSpeed = 30f;
 
 
     // Start is called before the first frame update
