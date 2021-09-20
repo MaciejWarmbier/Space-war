@@ -27,11 +27,19 @@ public class PlayerControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ProcessTranslation();
+        ProcessRotation();
+
+    }
+
+    private void ProcessTranslation()
+    {
         //float horizontalThrow = Input.GetAxis("Horizontal");
         //float verticalThrow = Input.GetAxis("Vertical");
 
         float xThrow = movement.ReadValue<Vector2>().x;
         float yThrow = movement.ReadValue<Vector2>().y;
+
 
         float xOffset = xThrow * Time.deltaTime * controlSpeed;
         float xRawPos = transform.localPosition.x + xOffset;
@@ -43,11 +51,13 @@ public class PlayerControls : MonoBehaviour
 
         float campedYPos = Mathf.Clamp(yRawPos, -yRange, yRange);
 
-        transform.localPosition = new Vector3 (clampedXPos, 
-        campedYPos, 
+        transform.localPosition = new Vector3(clampedXPos,
+        campedYPos,
         transform.localPosition.z);
+    }
 
-        Debug.Log(xThrow);
-        
+    private void ProcessRotation(){
+        transform.localRotation = Quaternion.Euler(-30f,30f,0f);
+
     }
 }
