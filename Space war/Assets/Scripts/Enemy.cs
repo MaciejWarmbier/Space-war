@@ -5,27 +5,47 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] GameObject deathVFX;
-    [SerializeField] Transform parent;
+    [SerializeField] GameObject hitVFX;
     [SerializeField] int enemyScore = 100;
+    [SerializeField] int hitPoints = 5;
     ScoreBoard scoreBoard;
+    GameObject parentGameObject;
+    
 
-    private void Start() {
+    private void Start()
+    {
         scoreBoard = FindObjectOfType<ScoreBoard>();
+        parentGameObject = GameObject.FindWithTag("SpawnAtRuntime");
+        AddRigidBody();
+
     }
+
+    private void AddRigidBody()
+    {
+        Rigidbody rb = gameObject.AddComponent<Rigidbody>();
+        rb.useGravity = false;
+    }
+
     private void OnParticleCollision(GameObject other)
     {
         ProcessHit();
-        KillEnemy();
+        if(hitPoints < 1){
+            KillEnemy();
+        }
     }
 
     private void ProcessHit()
     {
-        scoreBoard.IncrementScore(enemyScore);
+        GameObject vfx = Instantiate(hitVFX, transform.position, Quaternion.identity);
+        vfx.transform.parent = parentGameObject.transform;
+        hitPoints--;
+        
     }
     private void KillEnemy()
     {
+        scoreBoard.IncrementScore(enemyScore);
         GameObject vfx = Instantiate(deathVFX, transform.position, Quaternion.identity);
-        vfx.transform.parent = parent;
+        vfx.transform.parent = parentGameObject.transform;
         Destroy(this.gameObject);
     }
 
