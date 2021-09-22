@@ -99,7 +99,7 @@ MonoBehaviour:
   deathVFX: {fileID: 387632085698375514, guid: f4060e92ab350e543b63e89970fe4a4e, type: 3}
   hitVFX: {fileID: 387632085698375514, guid: e180dd21e1ea71648b08e67980546c47, type: 3}
   enemyScore: 50
-  hitPoints: 3
+  hitPoints: 5
 --- !u!65 &7686341673062442734
 BoxCollider:
   m_ObjectHideFlags: 0
