@@ -100,8 +100,10 @@ GameObject:
   - component: {fileID: 3992366003433323057}
   - component: {fileID: 56400750354511252}
   - component: {fileID: 2822797534754423134}
+  - component: {fileID: 1782107421593249706}
+  - component: {fileID: 3216371309479534887}
   m_Layer: 0
-  m_Name: StarSparrow16
+  m_Name: Dragon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -116,7 +118,7 @@ Transform:
   m_GameObject: {fileID: 4335958287197233291}
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -19.947233, y: 4, z: 10.391537}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.0746272, y: 0.68329084, z: 1.1972781}
   m_Children:
   - {fileID: 5727742559352749793}
   m_Father: {fileID: 0}
@@ -171,6 +173,35 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1782107421593249706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4335958287197233291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb67dd1fb12b05e479326a2d9bf2c2b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathVFX: {fileID: 387632085698375514, guid: f4060e92ab350e543b63e89970fe4a4e, type: 3}
+  hitVFX: {fileID: 387632085698375514, guid: e180dd21e1ea71648b08e67980546c47, type: 3}
+  enemyScore: 100
+  hitPoints: 5
+--- !u!65 &3216371309479534887
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4335958287197233291}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.1472936, y: 3.2459185, z: 10.599533}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5090823628514477270
 GameObject:
   m_ObjectHideFlags: 0

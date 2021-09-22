@@ -16,9 +16,9 @@ public class PlayerControls : MonoBehaviour
 
     [Header("Angle Movement Settings")]
     [Tooltip("How far player can move on the x axis before they are blocked")]
-    [SerializeField] float xRange = 9f;
+    [SerializeField] float xRange = 16f;
     [Tooltip("How far player can move on the y axis before they are blocked")]
-    [SerializeField] float yRange = 8f;
+    [SerializeField] float yRange = 10f;
     [Tooltip("How fast player rotates on Pitch (x) angle based on position")]
     [SerializeField] float positionPitchFactor = -2f;
     [Tooltip("How fast player rotates on Pitch (x) angle based on movement")]

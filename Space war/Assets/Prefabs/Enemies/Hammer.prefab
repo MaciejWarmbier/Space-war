@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3203015768747030875}
   - component: {fileID: 3193710672522732785}
   - component: {fileID: 5393408868804147770}
+  - component: {fileID: 7686341673062442734}
   m_Layer: 0
   m_Name: Hammer
   m_TagString: Untagged
@@ -26,14 +27,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3170580530232293573}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.22845535, y: -0, z: -0, w: 0.97355443}
   m_LocalPosition: {x: 26.328255, y: -0.0000038146973, z: 6.1602364}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.9721546, y: 2.3489, z: 2.1305633}
   m_Children:
   - {fileID: 3177095083166742311}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 26.412, y: 0, z: 0}
 --- !u!33 &3203015768747030875
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -97,9 +98,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 387632085698375514, guid: f4060e92ab350e543b63e89970fe4a4e, type: 3}
   hitVFX: {fileID: 387632085698375514, guid: e180dd21e1ea71648b08e67980546c47, type: 3}
-  parent: {fileID: 0}
-  enemyScore: 100
-  hitPoints: 5
+  enemyScore: 50
+  hitPoints: 3
+--- !u!65 &7686341673062442734
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3170580530232293573}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.493133, y: 1.7607898, z: 12.307948}
+  m_Center: {x: 0.05756656, y: -0.000015631342, z: 0}
 --- !u!1 &3170610040330283661
 GameObject:
   m_ObjectHideFlags: 0

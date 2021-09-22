@@ -268,8 +268,10 @@ GameObject:
   - component: {fileID: 4218660890293566951}
   - component: {fileID: 4245868231580824261}
   - component: {fileID: 4236082792741114097}
+  - component: {fileID: 5036023205107286918}
+  - component: {fileID: 7815917743606197572}
   m_Layer: 0
-  m_Name: StarSparrow10
+  m_Name: Speeder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -284,7 +286,7 @@ Transform:
   m_GameObject: {fileID: 4224159235113819045}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 12.742859, y: 4, z: 10.569958}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 2.9537, z: 2.100841}
   m_Children:
   - {fileID: 4221208420429804235}
   m_Father: {fileID: 0}
@@ -339,6 +341,35 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5036023205107286918
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4224159235113819045}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.887006, y: 4.2419863, z: 11.309124}
+  m_Center: {x: -0.0709939, y: -0.0000061346145, z: -0.0000013618464}
+--- !u!114 &7815917743606197572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4224159235113819045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb67dd1fb12b05e479326a2d9bf2c2b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathVFX: {fileID: 387632085698375514, guid: f4060e92ab350e543b63e89970fe4a4e, type: 3}
+  hitVFX: {fileID: 387632085698375514, guid: e180dd21e1ea71648b08e67980546c47, type: 3}
+  enemyScore: 70
+  hitPoints: 2
 --- !u!1 &4224176849974534615
 GameObject:
   m_ObjectHideFlags: 0

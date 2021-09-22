@@ -90,8 +90,10 @@ GameObject:
   - component: {fileID: 4811032212121854522}
   - component: {fileID: 4806052404381922188}
   - component: {fileID: 4800449355114666906}
+  - component: {fileID: 4571261902987362198}
+  - component: {fileID: 1886420104069380606}
   m_Layer: 0
-  m_Name: StarSparrow6
+  m_Name: Flea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106,7 +108,7 @@ Transform:
   m_GameObject: {fileID: 4813495645425490982}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.283327, y: 3, z: 10.107582}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.77772593, y: 0.75042856, z: 0.5288692}
   m_Children:
   - {fileID: 4811009703304627970}
   m_Father: {fileID: 0}
@@ -161,6 +163,35 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4571261902987362198
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4813495645425490982}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.050182, y: 1.979996, z: 13.02357}
+  m_Center: {x: -0.012023926, y: -0.05253305, z: -0.0000021036317}
+--- !u!114 &1886420104069380606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4813495645425490982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb67dd1fb12b05e479326a2d9bf2c2b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathVFX: {fileID: 387632085698375514, guid: f4060e92ab350e543b63e89970fe4a4e, type: 3}
+  hitVFX: {fileID: 387632085698375514, guid: e180dd21e1ea71648b08e67980546c47, type: 3}
+  enemyScore: 30
+  hitPoints: 1
 --- !u!1 &4813883647966332736
 GameObject:
   m_ObjectHideFlags: 0

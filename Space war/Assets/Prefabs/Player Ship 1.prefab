@@ -172,8 +172,8 @@ MonoBehaviour:
   lasers:
   - {fileID: 2007550112734307775}
   - {fileID: 2802026252870502439}
-  xRange: 9
-  yRange: 8
+  xRange: 16
+  yRange: 10
   positionPitchFactor: -2
   controlPitchFactor: -20
   positionYawFactor: -2
@@ -947,11 +947,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5165141571779142308, guid: 79c844b8f06460d4ab9f18c5634c92d9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.6661072
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5165141571779142308, guid: 79c844b8f06460d4ab9f18c5634c92d9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.84
+      value: -0.0000036358833
       objectReference: {fileID: 0}
     - target: {fileID: 5165141571779142308, guid: 79c844b8f06460d4ab9f18c5634c92d9, type: 3}
       propertyPath: m_LocalPosition.z
