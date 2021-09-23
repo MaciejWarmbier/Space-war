@@ -12,7 +12,9 @@ public class PlayerControls : MonoBehaviour
     [Tooltip("Controls for shooting of the player")]
     [SerializeField] InputAction shooting;
     [Tooltip("Array of player's laser particles to turn off/on")]
-    [SerializeField] GameObject[] lasers;
+    
+    [SerializeField] ParticleSystem laserLeft;
+    [SerializeField] ParticleSystem laserRight;
 
     [Header("Angle Movement Settings")]
     [Tooltip("How far player can move on the x axis before they are blocked")]
@@ -72,10 +74,17 @@ public class PlayerControls : MonoBehaviour
 
     private void SetLasersActive(bool isActive)
     {
+        var emissionModuleLeft = laserLeft.GetComponent<ParticleSystem>().emission;
+        var emissionModuleRight = laserRight.GetComponent<ParticleSystem>().emission;
+        
+        emissionModuleRight.enabled = isActive;
+        emissionModuleLeft.enabled = isActive;
+        /*
         foreach(GameObject laser in lasers){
             var emissionModule = laser.GetComponent<ParticleSystem>().emission;
             emissionModule.enabled = isActive;
         }
+        */
     }
 
     private void ProcessTranslation()
