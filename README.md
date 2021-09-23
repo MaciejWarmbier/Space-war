@@ -1,5 +1,11 @@
 # Space-war
-Simple unity game with testing of terrain. 
+Made in Unity\
+2021.1.17f1 version\
+A simple Rail Shooter game created in Unity. Its main focus is creating a fast and chatic experience for the player while he needs to destroy wave by wave of enemies. Controlling so many actors was my experiment here. So for both player trail and enemy movement I used Timeline tool. Player movement is controled by some simple movement Inputs and it works with both keyboard and xbox controller. Adding a lot of particle effects with dynamic deletion of them was also a new experience for me. 
+
+
+https://user-images.githubusercontent.com/68277319/134598730-22506161-9810-4ea2-98ba-f4327ec4ad40.mp4
+
 
 Music:
 Gaming Cyberpunk Electro | EVIL by Alex-Productions | https://www.youtube.com/channel/UCx0_M61F81Nfb-BRXE-SeVA
